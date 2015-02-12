@@ -1,0 +1,2390 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="hostsTabbedPane" alignment="1" min="-2" pref="733" max="-2" attributes="0"/>
+                  <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="infoLabel" alignment="0" min="-2" pref="733" max="-2" attributes="0"/>
+                      <Component id="limitationsLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="infoLabel" min="-2" pref="28" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="limitationsLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="hostsTabbedPane" pref="505" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="infoLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font bold="true" component="infoLabel" property="font" relativeSize="true" size="0"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Select whichever sites you would like to upload to.. You need not select again unless you want to change.."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="limitationsLabel">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+          <FontInfo relative="true">
+            <Font component="limitationsLabel" italic="true" property="font" relativeSize="true" size="-1"/>
+          </FontInfo>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;For filesize limitations and other info on each site, click here: &lt;a href=&apos;http://neembuuuploader.sourceforge.net/support.html#limitations&apos;&gt;http://neembuuuploader.sf.net/support.html#limitations&lt;/a&gt;&lt;/html&gt;"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Default Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="limitationsLabelMouseClicked"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JTabbedPane" name="hostsTabbedPane">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="hostsTabbedPaneKeyPressed"/>
+      </Events>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&lt;html&gt;&lt;br /&gt;&lt;b&gt;Free and Account&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&lt;/html&gt;">
+                <Property name="tabTitle" type="java.lang.String" value="&lt;html&gt;&lt;br /&gt;&lt;b&gt;Free and Account&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&lt;/html&gt;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="freeandacctPanel">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="billionUploadsCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="streamInCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="nowVideoCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="fileDudeCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="badongoCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="uploadMBCheckBox" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="oneFichierCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Component id="junoCloudCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="easyBytezCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="speedyShareCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="nowDownloadCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="vidXdenCheckBox" min="-2" max="-2" attributes="0"/>
+                                              <Component id="solidFilesCheckBox" min="-2" max="-2" attributes="0"/>
+                                              <Component id="megasharesCheckBox" min="-2" max="-2" attributes="0"/>
+                                              <Component id="depositFilesCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="turboBitCheckBox" min="-2" max="-2" attributes="0"/>
+                                              <Component id="arabLoadsCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="megaUpCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="letitbitCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="freakShareCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="xerVerCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="upStoreCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <Component id="megaUploadCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="multiUploadDotBizCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <Component id="easyshareCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                                  <Component id="multiUploadDotNlCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="lomaFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                          <Component id="turtleShareCheckBox" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Group type="102" alignment="1" attributes="0">
+                                                                  <Component id="uploadDriveCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="uppItCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Group type="102" alignment="1" attributes="0">
+                                                                  <Component id="uGotFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                                  <Component id="fileOmCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="allMyVideosCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="hugeFilesCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="kingFilesCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="anonFilesCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="fileDropperCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="filesFlashCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="luckyShareCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                              <Group type="102" attributes="0">
+                                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                                      <Group type="102" attributes="0">
+                                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                                              <Component id="myDiscCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                              <Component id="xvidStageCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                          </Group>
+                                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                                      </Group>
+                                                                      <Group type="102" alignment="1" attributes="0">
+                                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                                          <Component id="yourVideoHostCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                      </Group>
+                                                                  </Group>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                                      <Group type="102" attributes="0">
+                                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                                              <Component id="fireDriveCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                              <Component id="oronCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                          </Group>
+                                                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                                          <Component id="crockoCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                          <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                                                                      </Group>
+                                                                      <Group type="102" attributes="0">
+                                                                          <Component id="tusFilesCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                          <EmptySpace max="32767" attributes="0"/>
+                                                                          <Component id="dataFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                      </Group>
+                                                                  </Group>
+                                                              </Group>
+                                                              <Group type="102" alignment="1" attributes="0">
+                                                                  <Component id="vozUploadCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                                  <Component id="ultraMegaBitCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="fileHootCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              </Group>
+                                                          </Group>
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="fileRioCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <Component id="uptoboxCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="uploadBoxCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                                      <Component id="oneEightyCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                      <Component id="obOomCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  </Group>
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Component id="bitShareCheckBox" min="-2" max="-2" attributes="0"/>
+                                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                                  <Component id="megaCacheCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Component id="sharedCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                  </Group>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="shareOnlineCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="uploadizCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="rapidGatorCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="ryuShareCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="youWatchCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace pref="27" max="32767" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="1" attributes="0">
+                                                          <EmptySpace max="32767" attributes="0"/>
+                                                          <Component id="gettCheckBox" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="bLCheckBox" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="vShareCheckBox" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="uploadHeroCheckBox" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="privateFilesCheckBox" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="zShareCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                          <Component id="sockShareCheckBox" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="sendSpaceCheckBox" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="bayFilesCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="multiUploadCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="zippyShareCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="imageShackCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="1" attributes="0">
+                                                          <EmptySpace min="0" pref="175" max="32767" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="flameUploadCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="shareSendCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <Component id="gruploadCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="fileParadoxCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="uploadBoyCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="verZendCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="useFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="teraFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="loadToCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="promptFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="fileInzCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="fileCloudCcCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="fileStormCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="vipFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="ediskCzCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="mightyUploadCheckBox" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="clicknUploadCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="nitroFlareCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="fileJokerCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="rainUploadCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="xfileLoadCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="mediaFreeCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="griftHostCheckBox" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="fourUpFilesCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="vidToCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="vidZiCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="dogeFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="upZeroSevenCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="upSharedCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="cloudyEcCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="cloudFlyCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="speedVideoCheckBox" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="gBoxesCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="clickToWatchCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="fileDaisCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="filesTwoShareCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="fileViceCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="flashXCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="novaFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="safeSharingCheckBox" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="upaFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="videoMegaCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="videoWoodCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="streamCloudCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="vidUpCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="netUCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="rockFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="rapidUCheckBox" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="uploadRocketCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="uploadAbleCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="vodLockerCheckBox" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="vidBullCheckBox" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="1030" max="32767" attributes="0"/>
+                              <Component id="netLoadCheckBox" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="292" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="1025" max="32767" attributes="0"/>
+                              <Component id="slingFileCheckBox" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="285" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="3" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="939" max="32767" attributes="0"/>
+                              <Component id="gigaSizeCheckBox" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="369" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="2" attributes="0">
+                              <Component id="zippyShareCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="easyshareCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="depositFilesCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="badongoCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="turtleShareCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="multiUploadDotNlCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="lomaFileCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="shareOnlineCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="billionUploadsCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="arabLoadsCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="uploadDriveCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="uppItCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="hugeFilesCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="anonFilesCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="uploadizCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="2" attributes="0">
+                              <Component id="multiUploadCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileDudeCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="uGotFileCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="turboBitCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileOmCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="allMyVideosCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileDropperCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              <Component id="rapidGatorCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="2" attributes="0">
+                                  <Component id="bayFilesCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sendSpaceCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="megaUploadCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="multiUploadDotBizCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="kingFilesCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="filesFlashCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ryuShareCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                  <Component id="speedyShareCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="solidFilesCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="2" attributes="0">
+                                      <Component id="zShareCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="imageShackCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="uploadMBCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="megaUpCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fireDriveCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fileRioCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="luckyShareCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="gettCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="oneFichierCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="letitbitCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="oronCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="crockoCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="uptoboxCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="uploadBoxCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="nowDownloadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="vidXdenCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="myDiscCheckBox" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="xvidStageCheckBox" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="2" attributes="0">
+                                      <Component id="shareSendCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="sockShareCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bitShareCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="megaCacheCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="youWatchCheckBox" alignment="2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="gruploadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="flameUploadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="dataFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="tusFilesCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="freakShareCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="junoCloudCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="yourVideoHostCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="obOomCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="easyBytezCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="megasharesCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="vozUploadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ultraMegaBitCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fileHootCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="oneEightyCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="streamInCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="xerVerCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="bLCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="vShareCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="uploadHeroCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="privateFilesCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="sharedCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="nowVideoCheckBox" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="upStoreCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fileParadoxCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="uploadBoyCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="verZendCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="useFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="teraFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="loadToCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="promptFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileInzCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileCloudCcCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileStormCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="vipFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="ediskCzCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="mightyUploadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="clicknUploadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="nitroFlareCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileJokerCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="rainUploadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="xfileLoadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="mediaFreeCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="griftHostCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="fourUpFilesCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="vidToCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="vidZiCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="dogeFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="upZeroSevenCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="upSharedCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cloudyEcCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="cloudFlyCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="speedVideoCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="gBoxesCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="clickToWatchCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileDaisCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="filesTwoShareCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileViceCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="flashXCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="novaFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="safeSharingCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="uploadRocketCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="uploadAbleCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="vodLockerCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="vidBullCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="7" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="upaFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="videoMegaCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="videoWoodCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="streamCloudCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="vidUpCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="netUCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="rockFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="rapidUCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                              <Component id="netLoadCheckBox" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="349" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace pref="295" max="32767" attributes="0"/>
+                              <Component id="slingFileCheckBox" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="112" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" rootIndex="3" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
+                              <Component id="gigaSizeCheckBox" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="275" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JCheckBox" name="depositFilesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="DepositFiles.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="easyshareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Easy-share.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileDropperCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileDropper.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileDudeCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileDude.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="sendSpaceCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SendSpace.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="zShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ZShare.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadMBCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UploadMB.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="megaUploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MegaUpload.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="badongoCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Badongo.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="letitbitCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Letitbit.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="shareSendCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ShareSend.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="imageShackCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ImageShack.us"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uGotFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UGotFile.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="bayFilesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="BayFiles.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="multiUploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MultiUpload.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="zippyShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ZippyShare.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadBoxCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UploadBox.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="oronCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Oron.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="youWatchCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="YouWatch.org"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="crockoCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Crocko.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="gruploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="GRupload.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="flameUploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FlameUpload.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="oneFichierCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="1fichier.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="turboBitCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="TurboBit.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="rapidGatorCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="RapidGator.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="speedyShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SpeedyShare.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadizCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Uploadiz.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uploadizCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="netLoadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Netload.in"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="megaUpCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MegaUp.me"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="slingFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SlingFile.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="sockShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SockShare.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uptoboxCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Uptobox.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="shareOnlineCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Share-Online.biz"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="turtleShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="TurtleShare.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="gettCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Ge.tt"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="ryuShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="RyuShare.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="solidFilesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Solidfiles.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileOmCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileOM.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="anonFilesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="AnonFiles.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="multiUploadDotNlCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MultiUpload.nl"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="multiUploadDotBizCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MultiUpload.biz"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="luckyShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="LuckyShare.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileRioCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileRio.in"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="billionUploadsCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="BillionUploads.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="arabLoadsCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ArabLoads.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadDriveCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UploadDrive.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uppItCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UppIT.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="hugeFilesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="HugeFiles.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="kingFilesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="KingFiles.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fireDriveCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FireDrive.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="filesFlashCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FilesFlash.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="lomaFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Lomafile.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="allMyVideosCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="AllMyVideos.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="bitShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="BitShare.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="dataFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="DataFile.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="tusFilesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="TusFiles.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="freakShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FreakShare.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="junoCloudCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="JunoCloud.me"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="megaCacheCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MegaCache.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="easyBytezCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="EasyBytez.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="megasharesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Megashares.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="gigaSizeCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="GigaSize.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="streamInCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Streamin.to"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="xerVerCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Xerver.co"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vozUploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VozUpload.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="ultraMegaBitCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UltraMegaBit.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileHootCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileHoot.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="myDiscCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MyDisc.net"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="bLCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Bl.st"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="oneEightyCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="180Upload.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="oneEightyCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VShare.eu"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vShareCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadHeroCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UploadHero.co"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uploadHeroCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="nowVideoCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="NowVideo.sx"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="upStoreCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UpStore.net"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="upStoreCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileParadoxCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileParadox.in"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadBoyCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UploadBoy.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uploadBoyCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="xvidStageCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="XvidStage.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="verZendCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Verzend.be"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="verZendCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="useFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UseFile.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="useFileCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="yourVideoHostCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="YourVideoHost.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="privateFilesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="PrivateFiles.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="privateFilesCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="sharedCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Shared.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sharedCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="teraFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="TeraFile.co"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="teraFileCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="obOomCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Oboom.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="loadToCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Load.to"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loadToCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="nowDownloadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="NowDownload.ch"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vidXdenCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VidXden.com"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="promptFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="PromptFile.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="promptFileCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileInzCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileInz.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileInzCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileCloudCcCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileCloud.cc"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileCloudCcCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileStormCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileStorm.to"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileStormCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vipFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vip-File.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vipFileCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="ediskCzCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Edisk.cz"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ediskCzCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="mightyUploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MightyUpload.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mightyUploadCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="clicknUploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ClicknUpload.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clicknUploadCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="nitroFlareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="NitroFlare.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nitroFlareCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileJokerCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileJoker.net"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileJokerCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="rainUploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="RainUpload.net"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rainUploadCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="xfileLoadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="XfileLoad.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="xfileLoadCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="mediaFreeCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MediaFree.co"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mediaFreeCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="griftHostCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="GriftHost.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="griftHostCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fourUpFilesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="4UpFiles.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fourUpFilesCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vidToCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VidTo.me"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vidToCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vidZiCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VidZi.tv"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vidZiCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="dogeFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="DogeFile.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dogeFileCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="upZeroSevenCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Up07.net"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="upZeroSevenCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="upSharedCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UpShared.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="upSharedCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="cloudyEcCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Cloudy.ec"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cloudyEcCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="cloudFlyCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="CloudFly.us"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cloudFlyCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="speedVideoCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SpeedVideo.net"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="speedVideoCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="gBoxesCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="GBoxes.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gBoxesCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="clickToWatchCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ClickToWatch.net"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="clickToWatchCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileDaisCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileDais.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileDaisCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="filesTwoShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Files2Share.ch"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="filesTwoShareCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileViceCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileVice.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fileViceCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="flashXCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FlashX.tv"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="flashXCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="novaFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="NovaFile.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="novaFileCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="safeSharingCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SafeSharing.eu"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="safeSharingCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="upaFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UpaFile.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="upaFileCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="videoMegaCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VideoMega.tv"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="videoMegaCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="videoWoodCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VideoWood.tv"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="videoWoodCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="streamCloudCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="StreamCloud.eu"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="streamCloudCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vidUpCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VidUp.me"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vidUpCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="netUCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="NetU.tv"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="netUCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="rockFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="RockFile.eu"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rockFileCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="rapidUCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="RapidU.net"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rapidUCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadRocketCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UploadRocket.net"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uploadRocketCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadAbleCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="UploadAble.ch"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uploadAbleCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vodLockerCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VodLocker.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vodLockerCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="vidBullCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="VidBull.com"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vidBullCheckBoxActionPerformed"/>
+                  </Events>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="&lt;html&gt;&lt;br /&gt;&lt;b&gt;Account only&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&lt;/html&gt;">
+                <Property name="tabTitle" type="java.lang.String" value="&lt;html&gt;&lt;br /&gt;&lt;b&gt;Account only&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&lt;/html&gt;"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="acctonlyPanel">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="hotFileCheckBox" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="dropBoxCheckBox" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="fileSonicCheckBox" alignment="0" pref="182" max="32767" attributes="0"/>
+                                          <Component id="fileCloudCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="secureUploadCheckBox" alignment="0" max="32767" attributes="1"/>
+                                          <Component id="filePostCheckBox" alignment="0" pref="182" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="youTubeCheckBox" max="32767" attributes="1"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" attributes="0">
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Group type="102" alignment="0" attributes="0">
+                                                              <Component id="rapidShareCheckBox" min="-2" max="-2" attributes="0"/>
+                                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                              <Component id="asFileCheckBox" min="-2" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                              <Component id="fileServeCheckBox" alignment="0" pref="285" max="32767" attributes="1"/>
+                                                              <Component id="shareFlareCheckBox" alignment="0" min="-2" max="-2" attributes="1"/>
+                                                              <Group type="102" alignment="1" attributes="0">
+                                                                  <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
+                                                                  <Component id="iFileCheckBox" max="32767" attributes="1"/>
+                                                              </Group>
+                                                              <Component id="updownBzCheckBox" alignment="1" max="32767" attributes="1"/>
+                                                          </Group>
+                                                          <Component id="wuploadCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="zohoDocsCheckBox" alignment="0" min="-2" max="-2" attributes="1"/>
+                                                      </Group>
+                                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                              <Component id="fileFactoryCheckBox" min="-2" pref="143" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="fourSharedCheckBox" pref="248" max="32767" attributes="1"/>
+                                      <EmptySpace min="-2" pref="237" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="mediaFireCheckBox" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="230" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="enterUploadCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="boxDotComCheckBox" alignment="0" min="-2" pref="87" max="-2" attributes="1"/>
+                                      <Component id="scribdCheckBox" alignment="0" min="-2" max="-2" attributes="1"/>
+                                      <Component id="hostrCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cloudZerCheckBox" min="-2" pref="87" max="-2" attributes="1"/>
+                                      <Component id="mixtureCloudCheckBox" alignment="0" min="-2" pref="87" max="-2" attributes="1"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="keepTwoShareCheckBox" max="32767" attributes="1"/>
+                                              <Component id="twoSharedCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="uploadedDotToCheckBox" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="uploadingDotComCheckBox" alignment="0" min="-2" max="-2" attributes="1"/>
+                                              <Component id="sugarSyncCheckBox" alignment="0" min="-2" max="-2" attributes="1"/>
+                                          </Group>
+                                          <EmptySpace pref="107" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="ddlStorageCheckBox" min="-2" pref="87" max="-2" attributes="1"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <Component id="massMirrorCheckBox" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="dropBoxCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="rapidShareCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="enterUploadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="uploadedDotToCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="asFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="fileSonicCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="cloudZerCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="ddlStorageCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="shareFlareCheckBox" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="zohoDocsCheckBox" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="hotFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fileServeCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="boxDotComCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="uploadingDotComCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="updownBzCheckBox" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="fourSharedCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="iFileCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="scribdCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="sugarSyncCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="mediaFireCheckBox" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="fileCloudCheckBox" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="secureUploadCheckBox" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="wuploadCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="hostrCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="twoSharedCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="fileFactoryCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="mixtureCloudCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="keepTwoShareCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="youTubeCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="filePostCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="massMirrorCheckBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="160" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JCheckBox" name="enterUploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="EnterUpload.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="rapidShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="RapidShare.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="dropBoxCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="DropBox.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileSonicCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileSonic.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadedDotToCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Uploaded.net"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="zohoDocsCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ZohoDocs.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="hotFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="HotFile.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileServeCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileServe.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="boxDotComCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Box.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="uploadingDotComCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Uploading.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fourSharedCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="4Shared.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="iFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="IFile.it"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="scribdCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Scribd.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="sugarSyncCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="SugarSync.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="mediaFireCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MediaFire.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="wuploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Wupload.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="hostrCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Hostr.co"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="twoSharedCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="2Shared.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileCloudCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileCloud.io"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fileFactoryCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FileFactory.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="cloudZerCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="CloudZer.net"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="mixtureCloudCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MixtureCloud.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="secureUploadCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Secureupload.eu"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="keepTwoShareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Keep2Share.cc"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="ddlStorageCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="DDLStorage.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="youTubeCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="YouTube.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="filePostCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="FilePost.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="massMirrorCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="MassMirror.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="shareFlareCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ShareFlare.net"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="asFileCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Asfile.com"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="updownBzCheckBox">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Updown.bz"/>
+                    <Property name="enabled" type="boolean" value="false"/>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
