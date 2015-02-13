@@ -1,0 +1,236 @@
+===NeembuuUploader.java===
+1. Don't forget to change the static variable for version no
+2. See if the tables are not editable if they shouldn't be.
+
+===Uploader Implementation===
+0. Refer other classes first.
+1. Must have the field AtomicInteger uploadProgress = new AtomicInteger();
+2. Implemented methods must never return null
+3. Get username and password correctly
+4. If user disables an acct at runtime, disablelogin is called. Make sure you clear any cookies within that. The next upload should not go to his acct.
+5. See if you have added CommonUploaderTasks.uploadFinished and CommonUploaderTasks.uploadFailed(within catch) at the end.
+6. There should be only one overall exception catch. All other method calls should throw into this catch.
+7. Ensure you've put proper status assignments at appropriate places.
+8. See if your error messages are correct.
+9. You must add file size check code.
+10.You must verify if multiple simultaneous uploads work for the site with and without login enabled.
+11.Run multiple uploads with login. Stop one upload while it's in progress. Verify that other uploads to login doesn't fail.
+12.Open accounts and give correct details and login successfully. Then open accounts and give wrong details. Must get error.
+13.Delete the properties file everytime you add a new host.
+
+
+
+
+
+===Move host from Free & Account to Account Only===
+
+Uploader class: (Refer RapidShare.java for this.)
+* Make the Uploader class implement 'UploaderAccountNecessary' interface.
+* If "<rapidGator>Account.loginsuccessful" is false, call 'uploadFailed()' and 'return' from the method.
+
+UploaderAccount class:  (Refer RapidShareAccount.java for this)
+* Add these lines
+<snip>
+//These code are necessary for account only sites.
+HostsPanel.getInstance().<rapidShare>CheckBox.setEnabled(false);
+HostsPanel.getInstance().<rapidShare>CheckBox.setSelected(false);
+NeembuuUploader.getInstance().updateSelectedHostsLabel();
+
+NULogger.getLogger().log(Level.INFO, "{0} account disabled", getHOSTNAME());
+</snip>
+to "disableLogin()" method.
+* Add this line
+<snip>
+HostsPanel.getInstance().<rapidShare>CheckBox.setEnabled(true);
+</snip>
+where you make the login as successful. (tip: look for the "loginsuccessful = true;" line.)
+
+Gotta make design better.
+
+
+
+
+
+
+===Site Account Unique Keys===
+180Upload.com                   - oneeightyup
+1fichier.com                    - of
+2Shared.com                     - ts
+4Shared.com                     - 4s
+4upFiles.com                    - fourup
+AllMyVideos.net                 - allmvds
+ArabLoads.net                   - arblds
+Asfile.com                      - asfl
+Badongo.com                     - bog
+BayFiles.com                    - bf
+BillionUploads.com              - bllnu
+BitShare.com                    - btshr
+Bl.st                           - blst
+Box.com                         - box
+ClicknUpload.com                - clknup
+ClickToWatch.net                - clktowtch
+CloudFly.us                     - cloudfly
+Cloudy.ec                       - cloudec
+CloudZer.net                    - cz
+Crocko.com                      - cr
+DataFile.com                    - dtfl
+DDLStorage.com                  - ds
+DepositFiles.com                - df
+DogeFile.com                    - dogefl
+DropBox.com                     - db
+EasyBytez.com                   - esybytz
+Easy-Share.com                  - es
+EDisk.cz                        - edisk
+EnterUpload.com                 - eu
+Extabit.com                     - eb
+FileCloud.io                    - fc
+FileCloud.cc                    - flcloudcc
+FileDais.com                    - fldais
+FileFactory.com                 - ff
+FileHoot.com                    - flht
+FileInz.com                     - flinz
+FileJoker.net                   - fljoker
+FileOM.com                      - flom
+FileParadox.in                  - fpdx
+FilePost.com                    - flpst
+FileRio.in                      - flr
+Files2Share.ch                  - flstoshr
+FileServe.com                   - fsrv
+FilesFlash.com                  - flsflsh
+FileSonic.com                   - fsnc
+FileStorm.to                    - flstorm
+FileVice.com                    - flvice
+FlashX.tv                       - flshx
+FireDrive.com (ex PutLocker.com)- pl
+FreakShare.com                  - frkshr
+GBoxes.com                      - gboxes
+Ge.tt                           - gt
+GigaSize                        - gs
+GriftHost.com                   - grifthost
+GRupload.com                    - gru
+Hostr.co                        - lhr
+HotFile.com                     - hf
+HugeFiles.net                   - hgfls
+IFile.it                        - if
+ImageShack.us                   - is
+JunoCloud.me                    - jncld
+Keep2Share.cc                   - kpts
+KingFiles.net                   - kngfls
+Letitbit.net                    - lib
+LomaFile.com                    - lmfl
+LuckyShare.net                  - lsn
+MassMirror.com                  - mssmrr
+MediaFire.com                   - mf
+MediaFree.co                    - mediafr
+MegaCache.net                   - mgcch
+Megashares.com                  - mgshrs
+MegaUp.me                       - mum
+MegaUpload.com                  - mu
+MightyUpload.com                - mghtyup
+MixtureCloud.com                - mc
+MultiUpload.biz                 - mudb
+MyDisc.net                      - mydsc
+Netload.in                      - nl
+NetU.tv                         - netu
+NitroFlare.com                  - ntrflare
+NovaFile.com                    - novafl
+NowDownload.ch                  - nwdn
+NowVideo.sx                     - novi
+Oboom.com                       - obo
+Oron.com                        - or
+PromptFile.com                  - prmptfl
+PrivateFiles.com                - pvtfiles
+RainUpload.com                  - rainup
+RapidGator.com                  - rg
+RapidShare.com                  - rs
+RapidU.net                      - rpdu
+RockFile.eu                     - rckfl
+RyuShare.com                    - rys
+SafeSharing.eu                  - safeshr
+Scribd.com                      - sc
+Secureupload.eu                 - scru
+SendSpace.com                   - ss
+Shared.com                      - shared
+ShareFlare.net                  - shrflr
+Share-Online.biz                - so
+SlingFile.com                   - sf
+SockShare.com                   - scks
+Solidfiles.com                  - sldf
+SpeedVideo.net                  - spdvid
+SpeedyShare.com                 - spdyshr
+StreamCloud.eu                  - strmcld
+Streamin.to                     - strmin
+TeraFile.co                     - teraf
+TurboBit.net                    - trbb
+TurtleShare.com                 - ts
+TusFiles.net                    - tsfls
+UGotFile.com                    - ugf
+UltraMegaBit.com                - ultrmgbt
+UpaFile.com                     - upafl
+UpBooth.com                     - ubth
+Updown.bz                       - udwnbz
+UploadAble.ch                   - uploadable
+UploadBoy.com                   - upboy
+UploadBox.com                   - ub
+UploadDrive.com                 - upldrv
+Uploadeddotto                   - udt
+UploadHero.co                   - uphero
+Uploadingdotcom                 - udc
+Uploadiz                        - ui
+UploadRocket.net                - uprckt
+UppIT.com                       - uppit
+UpShared.com                    - upshrd
+UpStore.net                     - upstore
+Uptobox                         - utb
+Up07.net                        - upzeroseven
+UseFile                         - usefile
+Verzend.be                      - verzend
+VidBull.com                     - vidbull
+VideoMega.tv                    - vdmega
+VideoWood.tv                    - vdwood
+VidTo.me                        - vidto
+VidUp.me                        - vidup
+VidXden.com                     - vixd
+VidZi.tv                        - vidzi
+Vip-File.com                    - vipfile
+VodLocker.com                   - vodlckr
+VozUpload.com                   - vozu
+VReer.com                       - vr
+VShare.eu                       - vshare
+Wupload.com                     - wu
+Xerver.co                       - xerv
+Xfileload.com                   - xfileload
+XvidStage.com                   - xvid
+YouTube.com                     - yt
+YouWatch.org                    - ywtch
+YourVideoHost.com               - yrvh
+ZippyShare.com                  - zips
+ZohoDocs.com                    - zd
+ZShare.net                      - zs
+
+
+
+
+===To Check before releasing===
+1. Check version.xml
+2. Check version variable is updated or not
+3. Check site is updated or not
+    3.1. Update newfeatures.html
+    3.2. Move old templates/release.twig content in the head of templates/older_versions.twig
+    3.3. Update release.twig
+    3.4. If there are dead hosts, export them from db/hosts.json to db/old_hosts.json
+    3.5. If there are new hosts, update db/hosts.json
+    3.6. If there are new languages, update templates/available_language.twig
+    3.7. Put the new version archive in backup directory
+4. Check Readme and other text files.
+5. Remove runtime leftover files if any.
+6. Verify build default settings
+
+
+
+
+===After releasing===
+1. Create a new post in the Neembuu Uploader Facebook page: https://www.facebook.com/NeembuuUploader?fref=ts
+2. Create a new blog post:
+    2.1. SourceForge: http://sourceforge.net/p/neembuuuploader/blog/
+    2.2. Neembuu Blog: http://neembuu.com/blog
