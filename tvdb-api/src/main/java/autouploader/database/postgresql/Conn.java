@@ -15,7 +15,7 @@ public class Conn {
      public static Connection connection() throws Exception {
     Class.forName("org.postgresql.Driver").newInstance();
 
-    final String     url        = "jdbc:postgresql://HOST.vps.budgetdedicated.com/guava";
+    final String     url        = "jdbc:postgresql://localhost/test";
     final Properties properties = new Properties();
     properties.setProperty("user", "postgres");
     properties.setProperty("password", "Melissa32");

@@ -114,7 +114,8 @@
         <dependency>
             <groupId>com.omertron</groupId>
             <artifactId>thetvdbapi</artifactId>
-            <version>1.7</version>
+            <version>1.8-SNAPSHOT</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>

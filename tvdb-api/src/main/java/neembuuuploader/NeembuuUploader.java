@@ -5,6 +5,7 @@
  */
 package neembuuuploader;
 
+import java.sql.Connection;
 import java.awt.AWTException;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -169,7 +170,16 @@ public class NeembuuUploader extends javax.swing.JFrame {
         NeembuuUploaderProperties.setUp();
 
         //Initialize components
-        initComponents();
+       initComponents();
+       try{
+        
+        Connection testcon=autouploader.database.postgresql.Conn.connection();
+        System.out.println("Testcon offen");
+        testcon.close();
+        System.out.println("closed");
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
         setUpTrayIcon();
 
